@@ -1,0 +1,33 @@
+.main_screen {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.relex {
+  height: 300px;
+  width: 300px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relex_img {
+  height: 250px;
+  width: 170px;
+}
+
+.todo {
+  height: 450px;
+  width: 350px;
+  background-color: tomato;
+}
+
+.game {
+  height: 450px;
+  width: 350px;
+  background-color: tomato;
+}

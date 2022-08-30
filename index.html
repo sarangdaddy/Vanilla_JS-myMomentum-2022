@@ -8,39 +8,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header_bar">
-      <div class="header_cloumn">
-        <span>Welcome</span>
-        <span class="header_welcome_username">KIM</span>
-        <button class="logout_button">
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        </button>
-      </div>
-      <div class="header_cloumn">
-        <span>incheon</span>
-        <span>09월 01일</span>
-        <span>PM 10:30</span>
-      </div>
-    </header>
+    <form class="login-form hidden">
+      <input
+        type="text"
+        required
+        maxlength="15"
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
 
-    <div class="proverb_bar">
-      <h2>no pain no gain</h2>
-      <h3>kim</h3>
+    <div class="home hidden">
+      <header class="header_bar">
+        <div class="header_cloumn">
+          <span>incheon</span>
+          <span>09월 01일</span>
+          <span>PM 10:30</span>
+        </div>
+        <div class="header_cloumn">
+          <span class="header_welcome_username"></span>
+          <button class="logout_button">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="proverb_bar">
+        <h2>no pain no gain</h2>
+        <h3>kim</h3>
+      </div>
+
+      <main class="main_screen">
+        <div class="relex">
+          <img class="relex_img" src="img/1.jpg" />
+        </div>
+
+        <div class="todo">
+          <ul class="todo_list"></ul>
+        </div>
+
+        <div class="game"></div>
+      </main>
     </div>
-
-    <main class="main_screen">
-      <div class="relex">
-        <img class="relex_img" src="img/40.jpg" />
-      </div>
-
-      <div class="todo">
-        <ul class="todo_list"></ul>
-      </div>
-
-      <div class="game"></div>
-    </main>
-
-    <script src="js/js.js"></script>
+    <script src="js/login.js"></script>
     <script
       src="https://kit.fontawesome.com/ca4a5a88ab.js"
       crossorigin="anonymous"
