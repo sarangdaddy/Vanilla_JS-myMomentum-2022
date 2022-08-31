@@ -12,13 +12,18 @@ function handleLoginSubmit(event) {
   loginForm.classList.add(HIDDEN_KEY);
   const inputValue = loginInput.value;
   localStorage.setItem(USERNAME_KEY, inputValue);
-  welcomeUserName.innerText = `Welcome ${inputValue}`;
+  paintUserName(inputValue);
+}
+
+function paintUserName(username) {
+  welcomeUserName.innerText = `Welcome ${username}`;
   home.classList.remove(HIDDEN_KEY);
 }
 
 function handelLogoutClick() {
   loginForm.classList.remove(HIDDEN_KEY);
   home.classList.add(HIDDEN_KEY);
+  localStorage.removeItem(USERNAME_KEY);
 }
 
 logoutButton.addEventListener("click", handelLogoutClick);
@@ -29,6 +34,5 @@ if (localStorageUsername === null) {
   loginForm.classList.remove(HIDDEN_KEY);
   loginForm.addEventListener("submit", handleLoginSubmit);
 } else {
-  welcomeUserName.innerText = `Welcome ${localStorageUsername}`;
-  home.classList.remove(HIDDEN_KEY);
+  paintUserName(localStorageUsername);
 }
