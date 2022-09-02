@@ -46,14 +46,40 @@ const balls = [
   "45",
 ];
 
-const ballSpan = document.querySelector(".game");
-
-function getball() {
+const lottoBall = [];
+while (lottoBall.length < 6) {
   const chosenBall = balls[Math.floor(Math.random() * balls.length)];
-  ball.innerText = `볼은 ${chosenBall} 입니다.`;
+  if (lottoBall.indexOf(chosenBall) === -1) {
+    lottoBall.push(chosenBall);
+  }
 }
-const ball = document.createElement("span");
-ballSpan.appendChild(ball);
+console.log(balls);
 
-const gameButton = document.querySelector(".gamebutton");
-gameButton.addEventListener("click", getball);
+// var a = [1, 2, 3, 4, 5];
+// var b = [1, 2, 5];
+// b.forEach(function(item) {
+// var index = a.indexOf(item);
+// if (index !== -1) {
+// a.splice(index, 1);
+// }
+// });
+
+lottoBall.forEach(function (item) {
+  var index = balls.indexOf(item);
+  if (index !== -1) {
+    balls.splice(index, 1);
+  }
+});
+console.log(balls);
+
+const serviceBall = [];
+while (serviceBall.length < 1) {
+  const chosenBall = balls[Math.floor(Math.random() * balls.length)];
+  if (serviceBall.indexOf(lottoBall) === -1) {
+    serviceBall.push(chosenBall);
+  }
+}
+
+lottoBall.sort((a, b) => a - b);
+console.log(lottoBall);
+console.log(serviceBall);
