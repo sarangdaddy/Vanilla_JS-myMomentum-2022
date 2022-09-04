@@ -67,9 +67,10 @@ console.log(balls);
 lottoBall.forEach(function (item) {
   var index = balls.indexOf(item);
   if (index !== -1) {
-    balls.splice(index, 1);
+    balls.splice(index, 1); // 시작할 인덱스, 삭제 배열 수
   }
 });
+
 console.log(balls);
 
 const serviceBall = [];
