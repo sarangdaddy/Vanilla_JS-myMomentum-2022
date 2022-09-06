@@ -8,12 +8,7 @@
 
 /* SCREENS */
 @import "screen/login.css";
-
-body {
-  max-width: 1080px;
-  margin: auto;
-  background-color: #2b79c7;
-}
+@import "screen/home.css";
 
 .hidden {
   display: none;

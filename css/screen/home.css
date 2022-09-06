@@ -1,5 +1,5 @@
-.home {
+.home__body {
   max-width: 1080px;
   margin: auto;
-  background-color: tomato;
+  background-color: #81d4fa;
 }
