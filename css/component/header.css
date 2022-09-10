@@ -3,6 +3,21 @@
   justify-content: space-between;
   padding: 15px;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
+}
+
+.logout_button {
+  border: none;
+  padding: 7px;
+  border-radius: 15px;
+  color: #81d4fa;
+}
+
+.logout_button:hover {
+  cursor: pointer;
+}
+
+.logout_button i {
+  font-size: 17px;
 }

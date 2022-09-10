@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="login__body home__body">
-    <form class="login-form">
+    <form class="login-form hidden">
       <h1 class="login-form__title">Welcome to Healing lounge.</h1>
       <div class="login-form__column">
         <input
@@ -39,15 +39,14 @@
         </div>
       </header>
 
-      <div class="proverb_bar">
-        <h2 class="quote">no pain no gain</h2>
-        <h3 class="author">kim</h3>
-      </div>
-
       <main class="main_screen">
-        <div class="relex"></div>
+        <div class="relex">
+          <span class="relex__title">Your favorite photos.</span>
+        </div>
 
         <div class="todo">
+          <span class="todo__title">What is your main focus for today?</span>
+          <ul class="todo-list"></ul>
           <form class="todo-input">
             <input
               type="text"
@@ -55,7 +54,6 @@
               placeholder="Write a To Do and Press Enter."
             />
           </form>
-          <ul class="todo-list"></ul>
         </div>
 
         <div class="game">
@@ -64,6 +62,11 @@
           </button>
         </div>
       </main>
+
+      <div class="proverb_bar">
+        <h2 class="quote"></h2>
+        <h3 class="author"></h3>
+      </div>
     </div>
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
@@ -71,6 +74,7 @@
     <script src="js/relex.js"></script>
     <script src="js/game.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
     <script
       src="https://kit.fontawesome.com/ca4a5a88ab.js"
       crossorigin="anonymous"

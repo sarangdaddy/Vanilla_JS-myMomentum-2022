@@ -1,8 +1,19 @@
 .proverb_bar {
-  padding: 0px 15px 15px 15px;
-  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .proverb_bar h2 {
   margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #263238;
+}
+
+.proverb_bar h3 {
+  font-size: 12px;
+  font-weight: 400;
 }

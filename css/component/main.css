@@ -2,32 +2,100 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
   flex-wrap: wrap;
 }
 
 .relex {
-  height: 300px;
-  width: 300px;
-  background-color: tomato;
+  height: 270px;
+  width: 250px;
   display: flex;
-  justify-content: center;
+  background-color: white;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
 }
 
 .relex_img {
   height: 250px;
-  width: 170px;
+  width: 250px;
+  border-radius: 0 0 15px 15px;
+}
+
+.relex__title {
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 10px;
 }
 
 .todo {
   height: 450px;
   width: 350px;
-  background-color: tomato;
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.8);
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.todo__title {
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 10px 0 30px 0;
+}
+
+.todo-input {
+  position: absolute;
+  bottom: 0px;
+}
+
+.todo-input input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: solid 2px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.todo-input input::placeholder {
+  color: black;
+  border-color: solid 2px #ffd600;
+}
+
+.todo-input input:focus {
+  border-color: #ffd600;
+  outline: none;
+}
+
+.todo-list li {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-bottom: solid 1px #ffd600;
+  padding: 5px;
+}
+
+.todo-list li button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px;
+  cursor: pointer;
+  font-size: 17px;
+  color: #ffd600;
 }
 
 .game {
   height: 450px;
   width: 350px;
-  background-color: tomato;
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
 }
